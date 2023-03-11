@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>HTML layouts using tables</title>
+</head>
+<body>
+<table border=""cellspacing="20"background ="Screenshot_20230218-170504.jpg" width="100%" height="100%"cellpadding="15" 
+<tr>
+	<th style="background-color: blue;"><img src="favicon.jpg." width="30%" height="70%"></th>
+	<th><a href="home.html"target="content of the selected html file">home</a></th></br>
+	<th><a href="about.html"target="content of the selected html file">about</a></th>
+	<th> <a href="info.html"target="content of the selected html file">info</a></th>
+	<th> <a href="contact us.html"target="content of the selected html file">contact us</a></th>
+	
+</tr>
+    <td colspan="5"height="30%"width="70%"align="center">
+		<div class="slideshow-container">
+			<div class="mySlides">
+			  <img src="Screenshot_20230218-164603~3.jpg">
+			</div>
+			<div class="mySlides">
+			  <img src="download.jpg">
+			</div>
+			<div class="mySlides">
+			  <img src="Screenshot_20230218-164316.jpg">
+			</div>
+			<div class="mySlides">
+				<img src="Screenshot_20230218-164316~3.jpg">
+			  </div>
+			  <div class="mySlides">
+				<img src="Screenshot_20230218-164603~2.jpg">
+			  </div>
+			  <div class="mySlides">
+				<img src="Screenshot_20230218-164603~4.jpg">
+			  </div>
+			  <div class="mySlides">
+				<img src="Screenshot_20230218-164254.jpg">
+				</div>
+				<div class="mySlides">
+					<img src="Screenshot_20230218-164316~2.jpg">
+					</div>
+					<div class="mySlides">
+						<img src="Screenshot_20230218-164603.jpg">
+						</div>
+		  </div>
+		  <script>
+			var slideIndex = 0;
+			showSlides();
+			
+			function showSlides() {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			  }
+			  slideIndex++;
+			  if (slideIndex > slides.length) {slideIndex = 1}
+			  slides[slideIndex-1].style.display = "block";
+			  setTimeout(showSlides, 2000); // Change image every 4 seconds
+			}
+		  </script></td>
+</tr> 
+<tr cellspacing="100"cellpadding="20">
+	
+
+	<td colspan="2"><a href="2022-mclaren-artura-hybrid.jpg">article 1</a></td>
+	<td colspan="2"><a href="image-181-e1621123994654.webp">article 2</a></td>
+	<td align="center"rowspan="2"> side bar</td>
+</tr> 
+<tr>
+	<td colspan="2"><a href="sports.jpg">article 3</a> </td>
+	 <td colspan="2"><a href="aventador.jpg">article 4</a></td>
+	 </tr>
+
+	</table>
+    </body>
+    </html>
+	<th ><a href="favicon.jpg">favicon.jpg</a></th>
